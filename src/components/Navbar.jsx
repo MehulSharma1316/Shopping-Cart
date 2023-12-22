@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import ThemeSwitcherBtn from "./ThemeSwitcherBtn";
 
 const Navbar = () => {
   const cart = useSelector((state) => state.cart);
@@ -26,6 +27,9 @@ const Navbar = () => {
               )}
             </div>
           </NavLink>
+          <div>
+            <ThemeSwitcherBtn/>
+          </div>
         </div>
       </div>
     </div>
