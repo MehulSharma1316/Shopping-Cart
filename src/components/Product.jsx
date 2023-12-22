@@ -13,13 +13,13 @@ const Product = ({item}) => {
   }
 
   return (
-  <div  className="flex flex-col items-center justify-between 
+  <div  className="flex dark:bg-slate-800 dark:border-slate-500 dark:text-white  flex-col items-center justify-between 
     hover:scale-110 transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded-xl border-2 
-    shadow-xl hover:shadow-[0px_25px_50px_40px_rgba(0,0,0,0.15)]
+    shadow-xl hover:shadow-[0px_25px_50px_40px_rgba(0,0,0,0.15)] dark:hover:shadow-[0px_25px_50px_40px_rgba(225,225,225,0.07)]
     group ">
  
     <div>
-    <p  className="text-gray-700 font-semibold text-lg  truncate text-left w-40 mt-1">{item.title }</p>
+    <p  className="text-gray-700 dark:text-gray-200 font-semibold text-lg  truncate text-left w-40 mt-1">{item.title }</p>
     </div>
     <div className="text-[10px] text-gray-400 w-40 mt-1 text-left  ">
     <p>{item.description.split(" ").slice(0,10).join(" ") + "..."} </p>
@@ -31,8 +31,8 @@ const Product = ({item}) => {
    <div>
    <p className="text-green-600 font-semibold">${item.price}</p>
    </div>
-    <div className=" border-2 border-black p-1 px-3 rounded-full font-medium text-[12px]
-     group-hover:bg-gray-700 transition duration-300 ease-in group-hover:text-white">
+    <div className=" border-2 border-black dark:border-white  p-1 px-3 rounded-full font-medium text-[12px]
+     group-hover:bg-gray-700 dark:group-hover:bg-gray-100 transition duration-300 ease-in group-hover:text-white group-hover:font-semibold dark:group-hover:text-black ">
       {
         cart.some((c) => c.id === item.id) ?
         (

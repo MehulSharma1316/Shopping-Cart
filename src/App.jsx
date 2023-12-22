@@ -18,6 +18,7 @@ console.log("theme",theme)
 
 
   return <>
+  <div className="bg-gray-50 dark:bg-gray-800">
   <div className="bg-slate-900 ">
     <Navbar/>
   </div>
@@ -25,6 +26,8 @@ console.log("theme",theme)
       <Route path="/" element={<Home/>} />
       <Route path="/cart" element={<Cart/>} />
     </Routes>
+  </div>
+  
   </>;
 };
 

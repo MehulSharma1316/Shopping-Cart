@@ -19,16 +19,16 @@ function ThemeSwitcherBtn() {
     }
 
   return (
-    <div>
+    <div className=''>
     <button onClick={changeHandler}>
     {
         theme === "light" ? (
             <div>
-                <MdLightMode/>
+                <MdLightMode className="text-2xl" />
             </div>
         ) : (
             <div>
-                <MdDarkMode/>
+                <MdDarkMode className="text-2xl" />
             </div>
         )
     }

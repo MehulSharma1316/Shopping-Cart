@@ -27,7 +27,7 @@ const Home = () => {
   },[])
 
   return <div>
-     <div >
+     <div className=" bg-gray-50 dark:bg-gray-800">
       {
         loading ? <Spinner/> :
         items.length > 0 ? 

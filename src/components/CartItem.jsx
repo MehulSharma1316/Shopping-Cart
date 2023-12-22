@@ -23,10 +23,10 @@ function removerHandler() {
   </div>
   <div className="ml-10 self-start w-[100%] space-y-5 md:w-[70%]">
     <div>
-      <p className="text-xl font-semibold text-slate-700">{item.title}</p>
+      <p className="text-xl font-semibold text-gray-700 dark:text-gray-200">{item.title}</p>
     </div>
     <div>
-      <p className=" text-base font-medium text-slate-700">{item.description.split(" ").slice(0,15).join(" ") + "..."}</p>
+      <p className=" text-base font-medium text-gray-700 dark:text-gray-200 ">{item.description.split(" ").slice(0,15).join(" ") + "..."}</p>
     </div>
     <div className="flex justify-between">
       <p className="text-xl text-green-600 font-bold ">${item.price}</p>
