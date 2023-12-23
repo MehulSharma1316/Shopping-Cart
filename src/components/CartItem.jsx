@@ -38,7 +38,7 @@ function removerHandler() {
   </div>
   {
     itemIndex !== cartLength - 1 && (
-      <hr className="h-[0.08rem] bg-slate-50 border-0 dark:bg-slate-800"></hr>
+      <hr className="h-[0.08rem] bg-slate-900 border-0 dark:bg-slate-300"></hr>
     )
   }
   </div>

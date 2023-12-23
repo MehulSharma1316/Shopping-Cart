@@ -18,14 +18,16 @@ console.log("theme",theme)
 
 
   return <>
-  <div className="bg-gray-50 dark:bg-gray-800">
+  <div className="w-screen h-screen bg-gray-50 dark:bg-gray-800">
   <div className="bg-slate-900 ">
     <Navbar/>
   </div>
-    <Routes>
+  <div className=" bg-gray-50 dark:bg-gray-800">
+  <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/cart" element={<Cart/>} />
     </Routes>
+  </div>
   </div>
   
   </>;
